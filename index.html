@@ -4,9 +4,237 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bootstrap Design</title>
+    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+    <style>
+        #flex-container{
+            height: 200px;
+            background-color: darksalmon;
+        }
+    </style>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav> 
+    <br>
+    <br>
+    <h1>First Carousel</h1>
+    <div class="container">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/photo-1644299244258-6eff135031e9.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/photo-1645301300961-e2bc264b51fd.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/photo-1645854133180-e9273ae657dc.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+    </div>
+    <br>
+
     <h1>Hi dear here am i</h1>
+    <button type="button" class="btn btn-primary">Sweet Home</button>
+    <button type="button" class="btn btn-warning">Wrong Place</button>
+    <button type="button" class="btn btn-danger">Don't go</button>
+    <br>
+    <h1>Colors</h1>
+    <p class="text-primary">My first bootstrap colors</p>
+    <p class="text-info bg-dark">It's my world</p>
+    <p class="text-light bg-dark">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis, modi!</p>
+    <p class="text-dark">Lorem ipsum dolor sit amet consectetur.</p>
+    <p class="text-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ex, fugiat sint exercitationem eaque neque!</p>
+    <br>
+    <h1>Image Collection</h1>
+    <img class="img-fluid w-25 rounded-circle img-thumbnail" src="images/image_6483441.JPG" alt="">
+    <img class="img-fluid w-25 rounded-circle img-thumbnail"  src="images/272820949_3177036812576894_946193943669161332_n.jpg" alt="">
+    <img class="img-fluid w-25 rounded-circle img-thumbnail"  class="img-fluid w-25 rounded-circle img-thumbnail"  src="images/IMG_0092.PNG" alt="">
+    <br>
+    <h1>Design Card</h1>
+    <div class="card" style="width: 18rem;">
+        <img src="images/mark-thompson-A6Jwe2av-F8-unsplash.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Beautifull Place</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-warning">Buy Now</a>
+        </div>
+      </div>
+      <br>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100 " style="width: 18rem;">
+            <img src="images/pexels-photo-248370.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Bd Cars</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100" style="width: 18rem;">
+            <img src="images/pexels-pixabay-261985.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Bd Cars</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100" style="width: 20rem;">
+            <img src="images/E7jTcmsWQAAQfdg.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Bd Cars</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    <br>
+    <h1>Navigation System</h1>
+    <nav class="nav">
+        <a class="nav-link active" aria-current="page" href="#">Product</a>
+        <a class="nav-link"href="">Price</a>
+        <a class="nav-link"href="">Place</a>
+        <a class="nav-link"href="">Promotion</a>
+    </nav>
+    <br>
+    
+    <div class="container ">
+        <h1>Play with Grid</h1>
+        <div class="row">
+            <div class="col-4">
+                <p>Bootstraps CSS aims to apply the bare minimum of styles to make a layout work at the smallest breakpoint, and then layers on styles to adjust that design for larger devices. This optimizes your CSS, improves rendering time, and provides a great experience for your visitors.Bootstraps CSS aims to apply the bare minimum of styles to make a layout work at the smallest breakpoint, and then layers on styles to adjust that design for larger devices. This optimizes your CSS, improves rendering time, and provides a great experience for your visitors.</p>
+            </div>
+            <div class="col-4">
+                <p>Bootstraps CSS aims to apply the bare minimum of styles to make a layout work at the smallest breakpoint, and then layers on styles to adjust that design for larger devices. This optimizes your CSS, improves rendering time, and provides a great experience for your visitors.Bootstraps CSS aims to apply the bare minimum of styles to make a layout work at the smallest breakpoint, and then layers on styles to adjust that design for larger devices. This optimizes your CSS, improves rendering time, and provides a great experience for your visitors.</p>
+
+            </div>
+            <div class="col-4">
+                <p>Bootstraps CSS aims to apply the bare minimum of styles to make a layout work at the smallest breakpoint, and then layers on styles to adjust that design for larger devices. This optimizes your CSS, improves rendering time, and provides a great experience for your visitors.Bootstraps CSS aims to apply the bare minimum of styles to make a layout work at the smallest breakpoint, and then layers on styles to adjust that design for larger devices. This optimizes your CSS, improves rendering time, and provides a great experience for your visitors.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <br>
+    <div class="container ">
+        <h1>Grid Game</h1>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                <p>Bootstraps CSS aims to apply the bare minimum of styles to make a layout work at the smallest breakpoint, and then layers on styles to adjust that design for larger devices. This optimizes your CSS, improves rendering time, and provides a great experience for your visitors.Bootstraps CSS aims to apply the bare minimum of styles to make a layout work at the smallest breakpoint, and then layers on styles to adjust that design for larger devices. This optimizes your CSS, improves rendering time, and provides a great experience for your visitors.</p>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                <p>Bootstraps CSS aims to apply the bare minimum of styles to make a layout work at the smallest breakpoint, and then layers on styles to adjust that design for larger devices. This optimizes your CSS, improves rendering time, and provides a great experience for your visitors.Bootstraps CSS aims to apply the bare minimum of styles to make a layout work at the smallest breakpoint, and then layers on styles to adjust that design for larger devices. This optimizes your CSS, improves rendering time, and provides a great experience for your visitors.</p>
+
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                <p>Bootstraps CSS aims to apply the bare minimum of styles to make a layout work at the smallest breakpoint, and then layers on styles to adjust that design for larger devices. This optimizes your CSS, improves rendering time, and provides a great experience for your visitors.Bootstraps CSS aims to apply the bare minimum of styles to make a layout work at the smallest breakpoint, and then layers on styles to adjust that design for larger devices. This optimizes your CSS, improves rendering time, and provides a great experience for your visitors.</p>
+
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                <p>Bootstraps CSS aims to apply the bare minimum of styles to make a layout work at the smallest breakpoint, and then layers on styles to adjust that design for larger devices. This optimizes your CSS, improves rendering time, and provides a great experience for your visitors.Bootstraps CSS aims to apply the bare minimum of styles to make a layout work at the smallest breakpoint, and then layers on styles to adjust that design for larger devices. This optimizes your CSS, improves rendering time, and provides a great experience for your visitors.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+    <br>
+    <h1>Flex Contents</h1>
+    <div class="container">
+        <div class="d-flex flex-row">
+            <div>Cristiano</div>
+            <div>Benzama</div>
+            <div>Ramos</div>
+        </div>
+        <br>
+        <div class="d-flex flex-row-reverse">
+            <div>Messi</div>
+            <div>Mbppe</div>
+            <div>Neymar</div>
+        </div>
+        <br>
+        <div class="d-flex flex-column">
+            <div>Lewandoski</div>
+            <div>De Bruyne</div>
+            <div>Md. Salah</div>
+        </div>
+        <br>
+        <div class="d-flex flex-column-reverse">
+            <div>Lewandoski</div>
+            <div>De Bruyne</div>
+            <div>Md. Salah</div>
+        </div>
+        <br>
+        <div class="d-flex justify-content-center">
+            <div>Haland</div>
+            <div>Hakimi</div>
+            <div>Navas</div>
+        </div>
+        <div id="flex-container" class="d-flex align-items-center">
+            <div>Haland</div>
+            <div>Hakimi</div>
+            <div>Navas</div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
